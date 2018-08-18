@@ -193,7 +193,7 @@ class ImgDropAndCrop extends Component {
     return (
       <div className="containar-fluid">
         <h3>Upload Image</h3>
-
+			<input className="hidden" ref={this.fileInputRef} type='file' accept={acceptedFileTypes} multiple={false} onChange={this.handleFileSelect} />
          {imgSrc !== null ? 
             <div>
                
